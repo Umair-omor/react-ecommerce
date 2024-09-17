@@ -77,7 +77,7 @@ const RightSideBar = () => {
                   {bbb?.map((item, index) => {
                       return (
                         <li key={index} onClick={() => brandClick(item)} className={`group hover:bg-orange-100 cursor-pointer list-none inline-block px-2 mx-1 ${brandsPayload === item ? 'bg-gray-300 hover:bg-gray-300 rounded-sm' : ''}`}>
-                          <p className={`capitalize group-hover:translate-x-1 ease-in-out duration-200 active:text-orange-600 text-gray-700 inline-block text-sm ${brandsPayload === item ? 'text-orange-600 font-semibold' : ''}`}>{item.replace("_", " ")}</p>
+                          <p className={`capitalize group-hover:translate-x-1 ease-in-out duration-200 active:text-orange-600 text-gray-700 inline-block text-sm ${brandsPayload === item ? 'text-orange-600 font-semibold' : ''}`}>{item?.replace("_", " ")}</p>
                         </li>
                       )
                     })
